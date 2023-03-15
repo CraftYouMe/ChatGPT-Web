@@ -74,7 +74,7 @@ async function onConversation() {
   )
   scrollToBottom()
 
-  loading.value = true
+  loading.value = false
   prompt.value = ''
 
   let options: Chat.ConversationRequest = {}
