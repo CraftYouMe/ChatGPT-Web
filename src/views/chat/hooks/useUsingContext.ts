@@ -6,7 +6,7 @@ import { useChatStore } from '@/store'
 export function useUsingContext() {
   const ms = useMessage()
   const chatStore = useChatStore()
-  const usingContext = computed<boolean>(() => chatStore.usingContext)
+  const usingContext = computed<boolean>(() => chatStore.usingContext === false)
 
   function toggleUsingContext() {
     chatStore.setUsingContext(!usingContext.value)
