@@ -44,7 +44,7 @@ function handleReset() {
         <div class="flex-1">
           <NSlider v-model:value="temperature" :max="1" :min="0" :step="0.1" />
         </div>
-        <span>{{ 文本多样性 }}</span>
+        <span>{{ temperature }}</span>
         <NButton size="tiny" text type="primary" @click="updateSettings({ temperature })">
           {{ $t('common.save') }}
         </NButton>
@@ -54,7 +54,7 @@ function handleReset() {
         <div class="flex-1">
           <NSlider v-model:value="top_p" :max="1" :min="0" :step="0.1" />
         </div>
-        <span>{{ 准确性 }}</span>
+        <span>{{ top_p }}</span>
         <NButton size="tiny" text type="primary" @click="updateSettings({ top_p })">
           {{ $t('common.save') }}
         </NButton>
