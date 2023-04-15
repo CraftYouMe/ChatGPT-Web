@@ -52,7 +52,7 @@ onMounted(() => {
             href="https://github.com/Chanzhaoyu/chatgpt-web"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
           ，免费且基于 MIT 协议，没有任何形式的付费行为！
         </p>
